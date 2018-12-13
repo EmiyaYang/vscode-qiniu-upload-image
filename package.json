@@ -2,7 +2,7 @@
   "name": "paste-image-to-qiniu",
   "displayName": "paste image to qiniu",
   "description": "截图上传七牛云插件",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "publisher": "emiyayang",
   "author": {
     "name": "emiyayang",
