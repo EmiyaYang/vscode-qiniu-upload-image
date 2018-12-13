@@ -1,6 +1,6 @@
 {
-  "name": "paste-image-to-qiniu",
-  "displayName": "paste image to qiniu",
+  "name": "fc-paste-image-to-qiniu",
+  "displayName": "fc paste image to qiniu",
   "description": "截图上传七牛云插件",
   "version": "0.2.0",
   "publisher": "emiyayang",
