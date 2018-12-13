@@ -2,13 +2,13 @@
 
 这是一个支持直接粘贴图片文件或截图到 markdown 文档的 vscode 插件，为 vscode 的 md 文档编辑提供了更好的体验。
 
-该项目 fork 自 github 用户 favers 的 [同名项目](https://github.com/favers/vscode-qiniu-upload-image)。 在原有功能基础上新增了一些新特性。因为提了 MR 没回应就自己上了插件。
 
 ![screenshot](./screenshot/screenshot.gif)
 
-## 新特性
+## 声明
 
-在 Mac & Win 平台下可直接复制图片文件，通过插件粘贴到 markdown 文档。
+该项目 fork 自 github 用户 favers 的 [同名项目](https://github.com/favers/vscode-qiniu-upload-image)。 在原有功能基础上新增了一些新特性。因为提了 MR 没回应就自己上了插件。
+
 
 ## 安装
 输入命令：
