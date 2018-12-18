@@ -47,10 +47,12 @@ function start() {
     const mdFilePath = editor.document.fileName;
     const mdFileName = path.basename(mdFilePath, path.extname(mdFilePath));
 
+    vscode.window.setStatusBarMessage('Uploading image to qiniu...', 3000);
     createImageDirWithImagePath(imagePath).then(imagePath => {
         saveClipboardImageToFileAndGetPath(imagePath, (imagePath) => {
             if (!imagePath) return;
             if (imagePath === 'no image') {
+                vscode.window.setStatusBarMessage('Done', 3000);
                 vscode.window.showInformationMessage('There is not a image in clipboard.');
                 return;
             }
@@ -138,7 +140,7 @@ function saveClipboardImageToFileAndGetPath(imagePath, cb) {
 
         let ascript = spawn('osascript', [scriptPath, imagePath]);
         ascript.on('exit', function (code, signal) {
-            
+
         });
 
         ascript.stdout.on('data', function (data) {
@@ -151,7 +153,7 @@ function saveClipboardImageToFileAndGetPath(imagePath, cb) {
 
         let ascript = spawn('sh', [scriptPath, imagePath]);
         ascript.on('exit', function (code, signal) {
-            
+
         });
 
         ascript.stdout.on('data', function (data) {
